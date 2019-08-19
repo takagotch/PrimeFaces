@@ -20,8 +20,34 @@ public class PrimeConfigurationMock extends PrimeConfiguration {
     super(context, environment);
   }
   
+  @Override
+  public boolean isValiateEmptyFields() {
+    return validateEmptyFields;
+  }
+  
+  public void setValidateEmptyFields(boolean validateEmptyFields) {
+    this.validateEmptyFields = validateEmptyFields;
+  }
+  
+  @Override
+  public boolean isPartialSumitEnabled() {
+    return partialSumbitEnabled;
+  }
+  
+  public void setPartialSubmitEnabled(boolean partialSubmitEnabled) {
+    this.partialSubmitEnabled = partialSubmitEnabled;
+  }
+  
+  @Override
+  public boolean isResetValuesEnabled() {
+    return resetValuesEnabled;
+  }
   
   
+  
+  public void setMoveScriptsToBottom(boolean moveScriptsToBottom) {
+    this.moveScriptToBottom = moveScriptsToBottom;
+  }
 }
 ```
 
